@@ -1,6 +1,8 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Course from [https://youtu.be/ymavtyRpT0E?si=wNCvVcBq2ep-zPLD](https://youtu.be/ymavtyRpT0E?si=wNCvVcBq2ep-zPLD).
+
+making 3d globe with three.js and fiber
 
 ## Available Scripts
 
