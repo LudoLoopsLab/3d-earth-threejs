@@ -3,7 +3,7 @@ import styled from "styled-components"
 
 const TopSectionContainer = styled.div`
   position: absolute;
-  width: 100%;
+  width: 100vw;
   height: 50%;
   top: 0;
   left: 0;
@@ -11,7 +11,6 @@ const TopSectionContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-
   z-index: 99;
 `
 
@@ -21,6 +20,9 @@ const Logo = styled.h1`
   color: #fff;
   font-weight: 800;
   font-size: 80px;
+  @media screen and (max-width: 600px) {
+    font-size: 30px;
+  }
 `
 
 const Slogan = styled.h4`
@@ -30,6 +32,9 @@ const Slogan = styled.h4`
   font-weight: Donate700;
   font-size: 30px;
   margin-top: 10px;
+  @media screen and (max-width: 600px) {
+    font-size: 15px;
+  }
 `
 
 const Paragraph = styled.p`
@@ -41,6 +46,12 @@ const Paragraph = styled.p`
   font-weight: 500;
   max-width: 30%;
   text-align: center;
+  @media screen and (max-width: 600px) {
+    padding-top: 50px;
+
+    max-width: 75%;
+    font-size: 13px;
+  }
 `
 
 const DonateButton = styled.button`
