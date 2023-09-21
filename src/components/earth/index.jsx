@@ -30,7 +30,7 @@ export function Earth(props) {
       {/* <pointLight position={[0, 10, -5]} intensity={1} color="#fff" /> */}
       <pointLight
         color="#f6f3ea"
-        position={[2, 0, 5]}
+        position={[-5, 0, 5]}
         intensity={3}
         decay={0}
       />
@@ -42,8 +42,8 @@ export function Earth(props) {
         saturation={0}
         fade={true}
       />
-      <mesh ref={cloudsRef}>
-        <sphereGeometry args={[2.02, 32, 32]} />
+      <mesh ref={cloudsRef} position={[0, 0, 3]}>
+        <sphereGeometry args={[1.01, 32, 32]} />
         <meshPhongMaterial
           map={cloudsMap}
           opacity={0.6}
@@ -52,8 +52,8 @@ export function Earth(props) {
           side={THREE.DoubleSide}
         />
       </mesh>
-      <mesh ref={earthRef}>
-        <sphereGeometry args={[2, 32, 32]} />
+      <mesh ref={earthRef} position={[0, 0, 3]}>
+        <sphereGeometry args={[1, 32, 32]} />
         <meshPhongMaterial specularMap={specularMap} />
         <meshStandardMaterial
           map={colorMap}
